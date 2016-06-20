@@ -80,6 +80,7 @@ h2:not(:first-child) { margin: 1.75em 0 0.85em; }
 }
 
 .sign.platform_sign.platform_number {
+    display: inline-block;
     padding: 30px 20px;
     text-align: center;
 }
@@ -91,3 +92,20 @@ h2:not(:first-child) { margin: 1.75em 0 0.85em; }
 .sign.platform_sign.platform_lines {
     padding: 30px 80px;
 }
+
+.sign.train_line {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+
+.train_line.line_t1  { background: rgb(241, 141, 0); }
+.train_line.line_t2  { background: rgb(77, 156, 45); }
+.train_line.line_t3  { background: rgb(242, 103, 43); }
+.train_line.line_t4  { background: rgb(0, 130, 189); }
+.train_line.line_t5  { background: rgb(195, 74, 153); }
+.train_line.line_t6  { background: rgb(54, 96, 147); }
+.train_line.line_t7  { background: rgb(154, 164, 169); }
