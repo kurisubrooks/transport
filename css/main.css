@@ -149,18 +149,38 @@ h2:not(:first-child) { margin: 1.75em 0 0.85em; }
 
 .monitor.timetable .title .line .train_line {
     float: left;
-    font-size: 42px;
+    font-size: 38px;
+    padding: 5px 6px;
+    border-radius: 8px;
 }
 
 .monitor.timetable .title .line_to {
+    font-weight: bold;
+    margin-top: -6px;
     font-size: 34px;
-    margin-left: 80px;
+    margin-left: 66px;
 }
 
 .monitor.timetable .title .line_through {
-    font-size: 22px;
-    margin-left: 80px;
+    font-size: 20px;
+    margin-left: 66px;
     color: rgb(140, 140, 140);
+}
+
+.monitor.timetable .title .line_platform {
+    display: block;
+    float: right;
+    text-align: right;
+}
+
+.monitor.timetable .title .line_platform .platform_title {
+    margin-top: -4px;
+}
+
+.monitor.timetable .title .line_platform .platform_number {
+    margin-top: -4px;
+    font-size: 46px;
+    color: rgb(241, 86, 26);
 }
 
 .monitor.timetable .content ol,
