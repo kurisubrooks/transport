@@ -15,6 +15,11 @@
     padding: 0;
 }
 
+.col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+    padding-right: 0;
+    padding-left: 10px;
+}
+
 .center { text-align: center !important; }
 .left { text-align: left !important; }
 .right { text-align: right !important; }
@@ -81,9 +86,14 @@ h2:not(:first-child) { margin: 1.75em 0 0.85em; }
     vertical-align: middle;
 }
 
+.sign.platform_sign .platform_sign_large_text {
+    display: block;
+    font-size: 84px;
+}
+
 .sign.platform_sign.platform_number {
-    display: inline-block;
-    padding: 30px 20px;
+    display: block;
+    padding: 43.5px 20px;
     text-align: center;
 }
 
