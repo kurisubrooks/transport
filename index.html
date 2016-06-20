@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Transport for Sydney</title>
+    <style>
+
+        @font-face {
+            font-family: "TPFrank";
+            font-weight: 400;
+            src: url(fonts/tpfrank-regular.eot);
+            src: url(fonts/tpfrank-regular.eot#?iefix) format("embedded-opentype"),
+                 url(fonts/tpfrank-regular.woff) format("woff"),
+                 url(fonts/tpfrank-regular.ttf) format("truetype");
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .col-xs, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+            padding: 0;
+        }
+
+        .center { text-align: center !important; }
+        .left { text-align: left !important; }
+        .right { text-align: right !important; }
+        .top { vertical-align: top !important; }
+        .middle { vertical-align: middle !important; }
+        .bottom { vertical-align: bottom !important; }
+
+        body {
+            background: rgb(255, 255, 255);
+            font-family: "TPFrank";
+            font-weight: 400;
+            font-size: 16px;
+            color: rgb(35, 35, 35);
+            height: 100%;
+            margin: 10px 16px;
+        }
+
+        h2 {
+            font-size: 28px;
+            border-left: 5px solid rgb(200, 200, 200);
+            padding-left: 20px;
+            margin: 0.85em 0;
+        }
+
+        h2:not(:first-child) { margin: 1.75em 0 0.85em; }
+
+        .material-icons {
+            font-size: inherit;
+            vertical-align: middle;
+        }
+
+        .sign {
+            font-family: "TPFrank", "Roboto Condensed", sans-serif;
+            background-color: rgb(35, 35, 35);
+            color: rgb(255, 255, 255);
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .sign .material-icons { font-size: 50px; }
+
+        .sign.station_name {
+            background-color: rgb(241, 86, 26);
+            padding: 12.5px 20px;
+            text-align: center;
+        }
+
+        .sign.station_name.alternate {
+            background-color: rgb(35, 35, 35);
+            border-top: 5px solid rgb(241, 86, 26);
+            padding: 10px 20px;
+        }
+
+        .sign.platform_sign {
+            padding: 30px 40px;
+            border-left: 5px solid rgb(251, 86, 26);
+            border-right: 5px solid rgb(251, 86, 26);
+        }
+
+        .sign.platform_sign .platform_sign_text {
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        .sign.platform_sign.platform_number {
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .sign.platform_sign .platform_sign_number {
+            font-size: 102px;
+        }
+
+        .sign.platform_sign.platform_lines {
+            padding: 30px 80px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Station Signs</h2>
+
+    <div class="row">
+        <div class="col-xs">
+            <div class="box">
+                <div class="sign station_name">Lithgow</div>
+            </div>
+        </div>
+        <div class="col-xs">
+            <div class="box">
+                <div class="sign station_name alternate">Lithgow</div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Platform Signs</h2>
+
+    <div class="row">
+        <div class="col-xs">
+            <div class="box">
+                <div class="sign platform_sign">
+                    <i class="material-icons">arrow_back</i>
+                    <i class="material-icons">accessible</i>
+                    <i class="material-icons">directions_bus</i>
+                    <span class="platform_sign_text">Way Out</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs">
+            <div class="box">
+                <div class="sign platform_sign platform_lines">
+                    <div class="row">
+                        <div class="col-xs">
+                            <div class="box" style="border-right:3px solid rgb(60, 60, 60);">
+                                <span class="platform_sign_number top">2</span>
+                                <div class="platform_sign_text top" style="display:inline-block;margin-top: 16px;">Platform</div>
+                            </div>
+                        </div>
+                        <div class="col-xs">
+                            <div class="box right">
+                                <div class="platform_sign_text top" style="display:inline-block;margin-top: 16px;">Platform</div>
+                                <span class="platform_sign_number top">3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
