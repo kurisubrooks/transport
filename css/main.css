@@ -101,7 +101,6 @@ h2:not(:first-child) { margin: 1.75em 0 0.85em; }
     border-radius: 12px;
 }
 
-
 .train_line.line_t1  { background: rgb(241, 141, 0); }
 .train_line.line_t2  { background: rgb(77, 156, 45); }
 .train_line.line_t3  { background: rgb(242, 103, 43); }
@@ -109,3 +108,18 @@ h2:not(:first-child) { margin: 1.75em 0 0.85em; }
 .train_line.line_t5  { background: rgb(195, 74, 153); }
 .train_line.line_t6  { background: rgb(54, 96, 147); }
 .train_line.line_t7  { background: rgb(154, 164, 169); }
+
+.sign.services {
+    display: inline-block;
+    font-size: 60px;
+    padding-top: 7px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+.services.service_train { background: rgb(246, 143, 30); }
+.services.service_bus   { background: rgb(0, 178, 239); }
+.services.service_ferry { background: rgb(0, 170, 91); }
+.services.service_tram  { background: rgb(236, 26, 59); }
