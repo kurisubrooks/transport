@@ -21,6 +21,8 @@
 .top { vertical-align: top !important; }
 .middle { vertical-align: middle !important; }
 .bottom { vertical-align: bottom !important; }
+.float.right { float: right; }
+.float.left { float: left; }
 
 body {
     background: rgb(255, 255, 255);
@@ -47,7 +49,7 @@ h2:not(:first-child) { margin: 1.75em 0 0.85em; }
 }
 
 .sign {
-    font-family: "TPFrank", "Roboto Condensed", sans-serif;
+    font-family: "TPFrank";
     background-color: rgb(35, 35, 35);
     color: rgb(255, 255, 255);
     font-size: 40px;
@@ -98,7 +100,7 @@ h2:not(:first-child) { margin: 1.75em 0 0.85em; }
     color: rgb(255, 255, 255);
     font-size: 60px;
     padding: 10px;
-    border-radius: 12px;
+    border-radius: 15px;
 }
 
 .train_line.line_t1  { background: rgb(241, 141, 0); }
@@ -123,3 +125,71 @@ h2:not(:first-child) { margin: 1.75em 0 0.85em; }
 .services.service_bus   { background: rgb(0, 178, 239); }
 .services.service_ferry { background: rgb(0, 170, 91); }
 .services.service_tram  { background: rgb(236, 26, 59); }
+
+.monitor {
+    font-family: "TPFrank";
+    color: rgb(35, 35, 35);
+}
+
+.monitor.timetable .header {
+    background-color: rgb(241, 86, 26);
+    color: rgb(255, 255, 255);
+    padding: 2px 6px;
+    font-size: 18px;
+}
+
+.monitor.timetable .time_now {
+    font-size: 14px;
+}
+
+.monitor.timetable .title {
+    padding: 10px 6px 14px;
+    border-bottom: 1px solid rgb(100, 100, 100);
+}
+
+.monitor.timetable .title .line .train_line {
+    float: left;
+    font-size: 42px;
+}
+
+.monitor.timetable .title .line_to {
+    font-size: 34px;
+    margin-left: 80px;
+}
+
+.monitor.timetable .title .line_through {
+    font-size: 22px;
+    margin-left: 80px;
+    color: rgb(140, 140, 140);
+}
+
+.monitor.timetable .content ol,
+.monitor.timetable .content ul,
+.monitor.timetable .content li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.monitor.timetable .content .stations {
+    float: left;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.monitor.timetable .content .stations marquee {
+    height: 160px;
+}
+
+.monitor.timetable .content .identifiers {
+    float: right;
+}
+
+.monitor.timetable .content .identifiers li {
+    background-color: rgb(35, 35, 35);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding: 2px 6px;
+    width: 102px;
+    margin-bottom: 4px;
+}
