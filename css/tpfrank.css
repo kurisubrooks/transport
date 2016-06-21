@@ -2,8 +2,8 @@
 // TPFrank 200 (thin)
 */
 @font-face {
-    font-family: "TPFrank";
-    font-weight: 200;
+    font-family: "TPFrank-Thin";
+    font-weight: 100;
     font-style: normal;
     src: url("../fonts/tpfrank-thin.eot");
     src: url("../fonts/tpfrank-thin.eot?#iefix") format("embedded-opentype"),
@@ -12,23 +12,12 @@
          url("../fonts/tpfrank-thin.otf") format("opentype"),
          url("../fonts/tpfrank-thin.svg#tpfrank") format("svg");
 
-@font-face {
-    font-family: "TPFrank";
-    font-weight: 200;
-    font-style: italic;
-    src: url("../fonts/tpfrank-thinitalic.eot");
-    src: url("../fonts/tpfrank-thinitalic.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/tpfrank-thinitalic.woff") format("woff"),
-         url("../fonts/tpfrank-thinitalic.ttf") format("truetype"),
-         url("../fonts/tpfrank-thinitalic.otf") format("opentype"),
-         url("../fonts/tpfrank-thinitalic.svg#tpfrank") format("svg");
-
 /*
 // TPFrank 300 (light)
 */
 @font-face {
-    font-family: "TPFrank";
-    font-weight: 300;
+    font-family: "TPFrank-Light";
+    font-weight: 200;
     font-style: normal;
     src: url("../fonts/tpfrank-light.eot");
     src: url("../fonts/tpfrank-light.eot?#iefix") format("embedded-opentype"),
@@ -37,22 +26,11 @@
          url("../fonts/tpfrank-light.otf") format("opentype"),
          url("../fonts/tpfrank-light.svg#tpfrank") format("svg");
 
-@font-face {
-    font-family: "TPFrank";
-    font-weight: 300;
-    font-style: italic;
-    src: url("../fonts/tpfrank-lightitalic.eot");
-    src: url("../fonts/tpfrank-lightitalic.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/tpfrank-lightitalic.woff") format("woff"),
-         url("../fonts/tpfrank-lightitalic.ttf") format("truetype"),
-         url("../fonts/tpfrank-lightitalic.otf") format("opentype"),
-         url("../fonts/tpfrank-lightitalic.svg#tpfrank") format("svg");
-
 /*
 // TPFrank 400 (regular)
 */
 @font-face {
-    font-family: "TPFrank";
+    font-family: "TPFrank-Regular";
     font-weight: 400;
     font-style: normal;
     src: url("../fonts/tpfrank-regular.eot");
@@ -62,22 +40,11 @@
          url("../fonts/tpfrank-regular.otf") format("opentype"),
          url("../fonts/tpfrank-regular.svg#tpfrank") format("svg");
 
-@font-face {
-    font-family: "TPFrank";
-    font-weight: 400;
-    font-style: italic;
-    src: url("../fonts/tpfrank-regularitalic.eot");
-    src: url("../fonts/tpfrank-regularitalic.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/tpfrank-regularitalic.woff") format("woff"),
-         url("../fonts/tpfrank-regularitalic.ttf") format("truetype"),
-         url("../fonts/tpfrank-regularitalic.otf") format("opentype"),
-         url("../fonts/tpfrank-regularitalic.svg#tpfrank") format("svg");
-
 /*
 // TPFrank 500 (medium)
 */
 @font-face {
-    font-family: "TPFrank";
+    font-family: "TPFrank-Medium";
     font-weight: 500;
     font-style: normal;
     src: url("../fonts/tpfrank-medium.eot");
@@ -87,23 +54,12 @@
          url("../fonts/tpfrank-medium.otf") format("opentype"),
          url("../fonts/tpfrank-medium.svg#tpfrank") format("svg");
 
-@font-face {
-    font-family: "TPFrank";
-    font-weight: 500;
-    font-style: italic;
-    src: url("../fonts/tpfrank-mediumitalic.eot");
-    src: url("../fonts/tpfrank-mediumitalic.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/tpfrank-mediumitalic.woff") format("woff"),
-         url("../fonts/tpfrank-mediumitalic.ttf") format("truetype"),
-         url("../fonts/tpfrank-mediumitalic.otf") format("opentype"),
-         url("../fonts/tpfrank-mediumitalic.svg#tpfrank") format("svg");
-
 /*
 // TPFrank 600 (bold)
 */
 @font-face {
-    font-family: "TPFrank";
-    font-weight: 600;
+    font-family: "TPFrank-Bold";
+    font-weight: 700;
     font-style: normal;
     src: url("../fonts/tpfrank-bold.eot");
     src: url("../fonts/tpfrank-bold.eot?#iefix") format("embedded-opentype"),
@@ -113,18 +69,7 @@
          url("../fonts/tpfrank-bold.svg#tpfrank") format("svg");
 
 @font-face {
-    font-family: "TPFrank";
-    font-weight: 600;
-    font-style: italic;
-    src: url("../fonts/tpfrank-bolditalic.eot");
-    src: url("../fonts/tpfrank-bolditalic.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/tpfrank-bolditalic.woff") format("woff"),
-         url("../fonts/tpfrank-bolditalic.ttf") format("truetype"),
-         url("../fonts/tpfrank-bolditalic.otf") format("opentype"),
-         url("../fonts/tpfrank-bolditalic.svg#tpfrank") format("svg");
-
-@font-face {
-    font-family: "TPFrank";
+    font-family: "TPFrank-Bold";
     font-weight: bold;
     font-style: normal;
     src: url("../fonts/tpfrank-bold.eot");
@@ -133,24 +78,13 @@
          url("../fonts/tpfrank-bold.ttf") format("truetype"),
          url("../fonts/tpfrank-bold.otf") format("opentype"),
          url("../fonts/tpfrank-bold.svg#tpfrank") format("svg");
-
-@font-face {
-    font-family: "TPFrank";
-    font-weight: bold;
-    font-style: italic;
-    src: url("../fonts/tpfrank-bolditalic.eot");
-    src: url("../fonts/tpfrank-bolditalic.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/tpfrank-bolditalic.woff") format("woff"),
-         url("../fonts/tpfrank-bolditalic.ttf") format("truetype"),
-         url("../fonts/tpfrank-bolditalic.otf") format("opentype"),
-         url("../fonts/tpfrank-bolditalic.svg#tpfrank") format("svg");
 
 /*
 // TPFrank 700 (extrabold)
 */
 @font-face {
-    font-family: "TPFrank";
-    font-weight: 700;
+    font-family: "TPFrank-Black";
+    font-weight: 800;
     font-style: normal;
     src: url("../fonts/tpfrank-extrabold.eot");
     src: url("../fonts/tpfrank-extrabold.eot?#iefix") format("embedded-opentype"),
@@ -158,14 +92,3 @@
          url("../fonts/tpfrank-extrabold.ttf") format("truetype"),
          url("../fonts/tpfrank-extrabold.otf") format("opentype"),
          url("../fonts/tpfrank-extrabold.svg#tpfrank") format("svg");
-
-@font-face {
-    font-family: "TPFrank";
-    font-weight: 700;
-    font-style: italic;
-    src: url("../fonts/tpfrank-extrabolditalic.eot");
-    src: url("../fonts/tpfrank-extrabolditalic.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/tpfrank-extrabolditalic.woff") format("woff"),
-         url("../fonts/tpfrank-extrabolditalic.ttf") format("truetype"),
-         url("../fonts/tpfrank-extrabolditalic.otf") format("opentype"),
-         url("../fonts/tpfrank-extrabolditalic.svg#tpfrank") format("svg");
