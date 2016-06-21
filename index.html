@@ -3,22 +3,13 @@
 <head>
     <meta charset="utf-8">
     <title>Transport for Sydney</title>
+    <link href="css/tpfrank.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="js/jquery.js"></script>
     <script src="js/moment.js"></script>
-    <script>
-        $(document).ready(function() {
-            var time = $(".time");
-            console.log(time);
-            setInterval(function() {
-                $.each(time, function(index) {
-                    $(time[index]).text(moment().format("HH:mm:ss"));
-                });
-            }, 60)
-        });
-    </script>
+    <script>$(document).ready(function(){setInterval(function(){$.each($(".time"),function(index){$($(".time")[index]).text(moment().format("HH:mm:ss"));});},60)});</script>
 </head>
 <body>
 
