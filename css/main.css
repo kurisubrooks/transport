@@ -1,12 +1,3 @@
-@font-face {
-    font-family: "TPFrank";
-    font-weight: 400;
-    src: url(../fonts/tpfrank-regular.eot);
-    src: url(../fonts/tpfrank-regular.eot#?iefix) format("embedded-opentype"),
-         url(../fonts/tpfrank-regular.woff) format("woff"),
-         url(../fonts/tpfrank-regular.ttf) format("truetype");
-}
-
 * {
     box-sizing: border-box;
 }
@@ -31,12 +22,16 @@
 
 body {
     background: rgb(255, 255, 255);
-    font-family: "TPFrank";
-    font-weight: 400;
+    font-family: "TPFrank-Regular";
     font-size: 16px;
     color: rgb(35, 35, 35);
     height: 100%;
     margin: 10px 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "TPFrank-Regular";
+    font-weight: 400;
 }
 
 h2 {
@@ -54,7 +49,7 @@ h2:not(:first-child) { margin: 1.75em 0 0.85em; }
 }
 
 .sign {
-    font-family: "TPFrank";
+    font-family: "TPFrank-Regular";
     background-color: rgb(35, 35, 35);
     color: rgb(255, 255, 255);
     font-size: 40px;
@@ -64,14 +59,14 @@ h2:not(:first-child) { margin: 1.75em 0 0.85em; }
 .sign .material-icons { font-size: 50px; }
 
 .sign.station_name {
-    background-color: rgb(241, 86, 26);
+    background-color: rgb(247, 102, 45);
     padding: 12.5px 20px;
     text-align: center;
 }
 
 .sign.station_name.alternate {
     background-color: rgb(35, 35, 35);
-    border-top: 5px solid rgb(241, 86, 26);
+    border-top: 5px solid rgb(247, 102, 45);
     padding: 10px 20px;
 }
 
@@ -120,6 +115,7 @@ h2:not(:first-child) { margin: 1.75em 0 0.85em; }
 .train_line.line_t5  { background: rgb(195, 74, 153); }
 .train_line.line_t6  { background: rgb(54, 96, 147); }
 .train_line.line_t7  { background: rgb(154, 164, 169); }
+.train_line.blank    { background: rgb(35, 35, 35); }
 
 .sign.services {
     display: inline-block;
@@ -137,44 +133,51 @@ h2:not(:first-child) { margin: 1.75em 0 0.85em; }
 .services.service_tram  { background: rgb(236, 26, 59); }
 
 .monitor {
-    font-family: "TPFrank";
+    font-family: "TPFrank-Regular";
     color: rgb(35, 35, 35);
 }
 
 .monitor.timetable .header {
-    background-color: rgb(241, 86, 26);
+    background-color: rgb(247, 102, 45);
     color: rgb(255, 255, 255);
-    padding: 2px 6px;
+    padding: 4px 10px;
     font-size: 18px;
 }
 
-.monitor.timetable .time_now {
-    font-size: 14px;
+.monitor.timetable .header .service {
+    float: left;
+    font-family: "TPFrank-Regular";
+}
+
+.monitor.timetable .header .time_now {
+    font-family: "TPFrank-Regular";
+    font-size: 13px;
 }
 
 .monitor.timetable .title {
-    padding: 10px 6px 14px;
-    border-bottom: 1px solid rgb(100, 100, 100);
+    padding: 14px 10px;
 }
 
 .monitor.timetable .title .line .train_line {
+    font-family: "TPFrank-Medium";
     float: left;
-    font-size: 38px;
+    font-size: 33px;
     padding: 5px 6px;
     border-radius: 8px;
 }
 
 .monitor.timetable .title .line_to {
-    font-weight: bold;
+    font-family: "TPFrank-Medium";
     margin-top: -6px;
-    font-size: 34px;
-    margin-left: 66px;
+    font-size: 28px;
+    margin-left: 60px;
 }
 
 .monitor.timetable .title .line_through {
-    font-size: 20px;
-    margin-left: 66px;
-    color: rgb(140, 140, 140);
+    font-family: "TPFrank-Regular";
+    font-size: 18px;
+    margin-left: 61px;
+    color: rgb(90, 90, 90);
 }
 
 .monitor.timetable .title .line_platform {
@@ -185,12 +188,61 @@ h2:not(:first-child) { margin: 1.75em 0 0.85em; }
 
 .monitor.timetable .title .line_platform .platform_title {
     margin-top: -4px;
+    font-size: 14px;
 }
 
 .monitor.timetable .title .line_platform .platform_number {
-    margin-top: -4px;
-    font-size: 46px;
-    color: rgb(241, 86, 26);
+    padding: 2px 0 4px;
+    font-size: 32px;
+    color: rgb(247, 102, 45);
+}
+
+.monitor.timetable .title .line_platform .departs_title {
+    font-size: 14px;
+}
+
+.monitor.timetable .title .line_platform .departs_number {
+    padding-top: 4px;
+    font-size: 24px;
+    color: rgb(247, 102, 45);
+}
+
+.monitor.timetable .title ol,
+.monitor.timetable .title ul,
+.monitor.timetable .title li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.monitor.timetable .title .identifiers {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.monitor.timetable .title .identifiers li {
+    display: inline-block;
+    background-color: rgb(35, 35, 35);
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    width: 92px;
+    padding: 2px 4px;
+    margin-bottom: 4px;
+}
+
+.monitor.timetable .title .line_departing {
+    float: right;
+    margin-top: -22px;
+}
+
+.monitor.timetable .separator {
+    height: 1px;
+    border-bottom: 1px solid rgb(35, 35, 35);
+    margin: 0 10px;
+}
+
+.monitor.timetable .content {
+    padding: 10px;
 }
 
 .monitor.timetable .content ol,
@@ -204,7 +256,6 @@ h2:not(:first-child) { margin: 1.75em 0 0.85em; }
 .monitor.timetable .content .stations {
     float: left;
     font-size: 18px;
-    padding-left: 10px;
 }
 
 .monitor.timetable .content .stations marquee {
@@ -218,8 +269,8 @@ h2:not(:first-child) { margin: 1.75em 0 0.85em; }
 .monitor.timetable .content .identifiers li {
     background-color: rgb(35, 35, 35);
     color: rgb(255, 255, 255);
-    font-size: 14px;
-    padding: 2px 6px;
+    font-size: 13px;
     width: 102px;
+    padding: 2px 4px;
     margin-bottom: 4px;
 }
